@@ -1,4 +1,4 @@
-# Opal – A Loom Clone
+# Opal – A Loom Inspired Software
 
 Opal is a real-time video recording and sharing application inspired by [Loom](https://www.loom.com). Built using modern web technologies like **Next.js**, **TypeScript**, **TailwindCSS**, **Electron**, **Express**, and hosted on **AWS**, this project offers a complete solution for capturing, editing, and sharing screen recordings. It also integrates with **Stripe** for subscription-based payments.
 
