@@ -1,11 +1,15 @@
+import { onAuthenticateUser } from "@/actions/user";
 import { Button } from "@/components/ui/button";
-import { Menu, User } from "lucide-react";
+import { UserButton } from "@clerk/nextjs";
+import { LayoutDashboard, Menu, User } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
 type Props = object;
 
-export default function LandingPageNavbar({}: Props) {
+export default async function LandingPageNavbar({}: Props) {
+  const auth = await onAuthenticateUser();
+
   return (
     <nav className="flex w-full justify-between items-center">
       <div className="text-3xl font-semibold flex items-center gap-x-3">
@@ -23,12 +27,24 @@ export default function LandingPageNavbar({}: Props) {
         <Link href="#pricing">Pricing</Link>
         <Link href="#contact">Contact</Link>
       </div>
-      <Link href="/auth/sign-in">
-        <Button className="text-base flex gap-x-2 cursor-pointer">
-          <User fill="#000" />
-          Login
-        </Button>
-      </Link>
+      <div className="flex gap-x-5 items-center">
+        <Link href="/auth/sign-in">
+          <Button className="text-base flex gap-x-2 cursor-pointer">
+            {!auth ? (
+              <>
+                <User fill="#000" />
+                Sign In
+              </>
+            ) : (
+              <>
+                <LayoutDashboard fill="#000" />
+                Dashboard
+              </>
+            )}
+          </Button>
+        </Link>
+        {auth ? <UserButton /> : null}
+      </div>
     </nav>
   );
 }
