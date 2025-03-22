@@ -53,7 +53,7 @@ You have two options to get started with Opal:
 
 1. **Web Version:**  
    Visit our hosted version at:  
-   [https://opal.example.com](https://opal.example.com)
+   [Opal](https://opal.vercel.app)
 
 2. **Desktop Application (Windows):**  
    Download the installer (.exe) from our release page:  
@@ -107,6 +107,30 @@ Contributions are welcome! To contribute:
 ## License
 
 This project is licensed under the [MIT License](https://en.wikipedia.org/wiki/MIT_License)
+
+---
+
+## License by Web Prodigies
+
+This project is licensed for educational use only. For commercial use, a license must be purchased. You can obtain the license here: [Code License](https://webprodigies.com/license)
+
+---
+
+## Usage Guidelines by Web Prodigies
+
+Here are a few examples of how you can and cannot use the code:
+
+- **To learn? ✅**
+- **To build a portfolio? ✅**
+- **To get a job? ✅**
+- **To run as a business? ❌**
+- **To run as a SaaS? ❌**
+- **Any form of income through the code? ❌**
+- **To resell? ❌**
+- **To create content? ❌**
+- **To claim it fully as your own? ❌**
+
+These are just a few examples, and there may be more situations where the code usage is restricted you can read the agreement on the website. This code is provided strictly for learning purposes. If you wish to use our code for any commercial purposes, please purchase a license here: [Code License](https://webprodigies.com/license).
 
 ---
 
