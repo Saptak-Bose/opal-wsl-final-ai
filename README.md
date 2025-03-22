@@ -1,36 +1,117 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Opal – A Loom Clone
 
-## Getting Started
+Opal is a real-time video recording and sharing application inspired by [Loom](https://www.loom.com). Built using modern web technologies like **Next.js**, **TypeScript**, **TailwindCSS**, **Electron**, **Express**, and hosted on **AWS**, this project offers a complete solution for capturing, editing, and sharing screen recordings. It also integrates with **Stripe** for subscription-based payments.
 
-First, run the development server:
+> **Note:** For a detailed walkthrough of the project and its architecture, check out the [17-hour video tutorial](https://youtu.be/3R63m4sTpKo?si=XGiIQCVmeuCI3vG-) which explains every step of the development process.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Table of Contents
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- [Features](#features)
+- [Architecture](#architecture)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Configuration](#configuration)
+- [Contributing](#contributing)
+- [License](#license)
+- [Acknowledgments](#acknowledgments)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Features
 
-To learn more about Next.js, take a look at the following resources:
+- **Real-Time Video Recording:** Capture your screen with minimal latency.
+- **Screen Sharing:** Instantly share recordings in real time.
+- **Cross-Platform Desktop App:** Available as a downloadable executable (.exe) for Windows.
+- **Responsive UI:** Built with TailwindCSS for a modern and mobile-friendly design.
+- **Subscription Payments:** Integrated with Stripe for handling subscriptions.
+- **Full-Stack Integration:** Combines a Next.js front end with an Express backend, all hosted on AWS.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Architecture
 
-## Deploy on Vercel
+Opal is divided into two main parts:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. **Frontend:**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   - **Next.js & TypeScript:** For building dynamic user interfaces and server-side rendering.
+   - **TailwindCSS:** For rapid and responsive UI development.
+   - **Electron:** Wraps the web app into a desktop application.
+
+2. **Backend:**
+   - **Express:** Provides RESTful APIs for managing recordings, user sessions, and payments.
+   - **AWS:** Utilized for scalable media storage and processing.
+   - **Stripe:** Manages subscription and one-time payments.
+
+---
+
+## Installation
+
+You have two options to get started with Opal:
+
+1. **Web Version:**  
+   Visit our hosted version at:  
+   [https://opal.example.com](https://opal.example.com)
+
+2. **Desktop Application (Windows):**  
+   Download the installer (.exe) from our release page:  
+   [Download Opal for Windows](https://opal.example.com/download)  
+   After downloading, simply double-click the `.exe` file and follow the on-screen instructions to install the application.
+
+---
+
+## Usage
+
+- **Web Version:**  
+  Open your browser and navigate to [https://opal.example.com](https://opal.example.com). Sign in or create an account to start recording and sharing your videos in real time.
+
+- **Desktop Application:**  
+  Once installed, launch the application from your desktop. The app provides a user-friendly interface to capture your screen and share videos directly. It will also automatically check for updates and notify you when a new version is available.
+
+---
+
+## Configuration
+
+Customize your settings by reviewing the configuration files located in the `config` folder. This includes:
+
+- AWS configurations for scalable media storage and processing.
+- Stripe integration settings for handling subscriptions and payments.
+- Other environment variables necessary for both frontend and backend operation.
+
+---
+
+## Contributing
+
+Contributions are welcome! To contribute:
+
+1. **Fork the Repository**
+2. **Create a Feature Branch:**
+   ```bash
+   git checkout -b feature/YourFeature
+   ```
+3. **Commit Your Changes:**
+   ```bash
+   git commit -m "Add some feature"
+   ```
+4. **Push to Your Branch:**
+   ```bash
+   git push origin feature/YourFeature
+   ```
+5. **Open a Pull Request:**
+   For major changes, please open an issue first to discuss what you would like to change.
+
+---
+
+## License
+
+This project is licensed under the [MIT License](https://en.wikipedia.org/wiki/MIT_License)
+
+---
+
+## Acknowledgments
+
+- [Loom](https://www.loom.com) for inspiring this project.
+- The Creators of **Next.js**, **Electron**, **TailwindCSS**, **Express**, and **Stripe** for their amazing tools.
+- The [Video Tutorial](https://youtu.be/3R63m4sTpKo?si=XGiIQCVmeuCI3vG-) by Web Prodigies for the in-depth development guide.
