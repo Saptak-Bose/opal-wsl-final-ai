@@ -23,3 +23,21 @@ type MenuItemProps = {
   href: string;
   icon: Readonly<ReactNode>;
 };
+
+type NotificationProps = {
+  status: number;
+  data: {
+    _count: {
+      notification: number;
+    };
+  };
+};
+
+type PlanProps = {
+  status: number;
+  data: {
+    subscription: {
+      plan: "PRO" | "FREE";
+    } | null;
+  };
+};
